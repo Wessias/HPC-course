@@ -27,7 +27,7 @@ static inline void calculate_distance(Cell c1, Cell c2, int *local_distance_coun
 	float dx = c1.x - c2.x;
 	float dy = c1.y - c2.y;
 	float dz = c1.z - c2.z;
-	short rounded_dist = (int)(sqrtf(dx * dx + dy * dy + dz * dz) * 100);  // Use sqrtf for float
+	short rounded_dist = (short)(sqrtf(dx * dx + dy * dy + dz * dz) * 100);  // Use sqrtf for float
 	local_distance_count[rounded_dist]++;
 
 }
